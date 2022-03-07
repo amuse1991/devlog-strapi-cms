@@ -3,7 +3,6 @@ const config =
   process.env.NODE_ENV === "production"
     ? parse(process.env.DATABASE_URL)
     : parse(process.env.DB_CONNECTION_STRING);
-
 module.exports = ({ env }) => ({
   connection: {
     client: "postgres",
